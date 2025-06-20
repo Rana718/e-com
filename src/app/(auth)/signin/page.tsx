@@ -57,7 +57,8 @@ const Page = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <Card className="w-[380px] shadow-lg">                    <CardHeader className="space-y-2">
+                <Card className="w-[380px] shadow-lg">
+                    <CardHeader className="space-y-2">
                         <CardTitle className="text-2xl font-bold text-center">Welcome Back</CardTitle>
                         <p className="text-sm text-muted-foreground text-center">Please enter your details</p>
                         {error && (
@@ -72,7 +73,8 @@ const Page = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.2 }}
-                        >                            <div className="relative">
+                        >
+                            <div className="relative">
                                 <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                                 <Input
                                     type='email'
@@ -81,7 +83,8 @@ const Page = () => {
                                     onChange={(e) => setEmail(e.target.value)}
                                     className="pl-10 transition-all hover:border-primary"
                                 />
-                            </div>                            <div className="relative">
+                            </div>
+                            <div className="relative">
                                 <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                                 <Input
                                     type='password'
@@ -90,7 +93,8 @@ const Page = () => {
                                     onChange={(e) => setPassword(e.target.value)}
                                     className="pl-10 transition-all hover:border-primary"
                                 />
-                            </div>                            <Button
+                            </div>
+                            <Button
                                 onClick={() => handelSubmit()}
                                 disabled={isLoading}
                                 className="bg-primary hover:bg-primary/90 transition-colors disabled:opacity-50"
@@ -101,7 +105,7 @@ const Page = () => {
                     </CardContent>
                     <CardFooter className='flex flex-col gap-4'>
                         <div className='mt-4 text-sm text-center text-muted-foreground'>
-                            Don't have an account?{" "}
+                            Don&apos;t have an account?{" "}
                             <Link
                                 href="/signup"
                                 className="text-primary hover:underline font-medium"
