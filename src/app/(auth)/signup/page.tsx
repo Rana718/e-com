@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation'
 import { trpc } from '@/components/providers/trpc-provider'
 import { toast } from 'sonner'
 
-const page = () => {
+const Page = () => {
     const [name, setName] = useState('');
     const router = useRouter();
     const [email, setEmail] = useState('');
@@ -129,4 +129,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
