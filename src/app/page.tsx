@@ -12,36 +12,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
-      {/* Header */}
-      {/* <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <ShoppingBag className="h-8 w-8 text-primary" />
-              <h1 className="text-2xl font-bold">InterestShop</h1>
-            </div>
-            <nav className="flex items-center space-x-4">
-              {session ? (
-                <>
-                  <span className="text-sm text-muted-foreground">Welcome, {session.user?.name}</span>
-                  <Button asChild>
-                    <Link href="/interests">My Interests</Link>
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <Button variant="outline" asChild>
-                    <Link href="/signin">Sign In</Link>
-                  </Button>
-                  <Button asChild>
-                    <Link href="/register">Get Started</Link>
-                  </Button>
-                </>
-              )}
-            </nav>
-          </div>
-        </div>
-      </header> */}
 
       {/* Hero Section */}
       <section className="py-20">
